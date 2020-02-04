@@ -28,7 +28,7 @@ class DartAuth(object, metaclass=Singleton):
          DART 인증키
 
     """
-    _SEARCH_URL_ = 'http://dart.fss.or.kr/api/'
+    _SEARCH_URL_ = 'http://opendart.fss.or.kr/api/'
 
     __api_key = None
 
@@ -59,7 +59,7 @@ class DartAuth(object, metaclass=Singleton):
         if not isinstance(api_key, str):
             raise ValueError('The Dart Api key must be provided through the api_key variable')
 
-        url = 'http://dart.fss.or.kr/api/search.json'
+        url = 'http://opendart.fss.or.kr/api/search.json'
         params = dict()
         params['auth'] = api_key
 
